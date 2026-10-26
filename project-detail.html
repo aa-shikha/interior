@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title id="page-title">Project Details — Oak & Earth</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="project-detail-body">
+
+  <main class="project-detail-container">
+    
+    <!-- Top Back Link -->
+    <div class="detail-back-bar">
+      <a href="index.html#projects" class="back-link">
+        <span class="arrow">&larr;</span> ALL PROJECTS
+      </a>
+    </div>
+
+    <!-- Title & Tagline Header Row -->
+    <header class="detail-hero-header">
+      <div class="detail-title-col">
+        <span class="detail-category-tag" id="detail-tag">RESIDENTIAL</span>
+        <h1 class="detail-main-title" id="detail-title">Terracotta House</h1>
+      </div>
+      <div class="detail-excerpt-col">
+        <p class="detail-excerpt" id="detail-excerpt">
+          A sunlit family home layered in oak and earth tones.
+        </p>
+      </div>
+    </header>
+
+    <!-- Main Large Hero Image -->
+    <div class="detail-hero-banner">
+      <img src="assets/8.jpg" alt="Cover" class="detail-banner-img" id="detail-hero-img">
+    </div>
+
+    <!-- 4-Image Horizontal Grid -->
+    <section class="detail-gallery-grid" id="detail-gallery">
+      <!-- Dynamic Images Load Honge -->
+    </section>
+
+    <!-- Project Specifications & Story Section -->
+    <section class="detail-story-section">
+      
+      <!-- Left: Specs Table -->
+      <div class="detail-specs-table">
+        <div class="spec-row">
+          <span class="spec-label">LOCATION</span>
+          <span class="spec-value" id="spec-location">New Delhi</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">YEAR</span>
+          <span class="spec-value" id="spec-year">2025</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">AREA</span>
+          <span class="spec-value" id="spec-area">1,850 sq ft</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-label">CATEGORY</span>
+          <span class="spec-value" id="spec-category">Residential</span>
+        </div>
+      </div>
+
+      <!-- Right: Narrative Story -->
+      <div class="detail-story-content">
+        <h2 class="story-title">The Story</h2>
+        <div class="story-text" id="detail-story">
+        </div>
+      </div>
+
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section class="detail-cta-card">
+      <div class="cta-text-wrap">
+        <h3 class="cta-card-title">Have a space like this in mind?</h3>
+        <p class="cta-card-desc">
+          Share your site, your timeline and how you hope the room will feel — we'll shape a proposal around it.
+        </p>
+      </div>
+      <a href="index.html#contact" class="btn-cta-project">
+        Start a similar project <span class="cta-arrow">&rarr;</span>
+      </a>
+    </section>
+
+    <!-- Next Project Navigation Footer Link -->
+    <div class="detail-next-project-bar">
+      <div class="next-project-info">
+        <span class="next-tag">NEXT PROJECT</span>
+        <h4 class="next-title" id="next-project-title">The Oak Haven</h4>
+      </div>
+      <a href="project-detail.html?id=2" class="btn-next-circle" id="next-project-btn" aria-label="Next Project">
+        <span class="circle-arrow">&rarr;</span>
+      </a>
+    </div>
+
+  </main>
+
+  <!-- ================= INLINE JAVASCRIPT ================= -->
+  <script>
+    const projectsData = {
+      1: {
+        title: "The Serene Residence",
+        tag: "RESIDENTIAL",
+        category: "Modern Home",
+        location: "New Delhi, India",
+        year: "2025",
+        area: "1,850 sq ft",
+        excerpt: "A warm, contemporary home blending natural textures, elegant finishes, and everyday comfort.",
+        heroImg: "assets/28.jpg",
+        gallery: ["assets/36.jpg", "assets/30.jpg", "assets/29.jpg", "assets/5.jpg"],
+        story: [
+          "The Serene Residence was designed around quiet luxury and fluid family living. We focused on natural illumination, muted lime plaster tones, and tactile fabrics that cultivate tranquility.",
+          "Custom oak cabinetry and concealed accent profiles bring seamless structure, allowing natural light to soften everyday moments throughout the central open layout."
+        ],
+        nextId: 2,
+        nextTitle: "The Oak Haven"
+      },
+      2: {
+        title: "The Oak Haven",
+        tag: "RESIDENTIAL",
+        category: "Luxury Apartment",
+        location: "Gurugram, India",
+        year: "2025",
+        area: "2,400 sq ft",
+        excerpt: "A sophisticated apartment with warm wood details, soft neutrals, and a functional open layout.",
+        heroImg: "assets/8.jpg",
+        gallery: ["assets/38.jpg", "assets/12.jpg", "assets/14.jpg", "assets/20.jpg"],
+        story: [
+          "The Oak Haven transforms an expansive apartment into an intimate, warm sanctuary. Fluted oak panels conceal utility spaces while grounding the extensive living and entertainment zones.",
+          "A tailored palette of brushed brass, textured bouclé, and smoked quartz highlights modern architectural balance."
+        ],
+        nextId: 3,
+        nextTitle: "The Ivory House"
+      },
+      3: {
+        title: "The Ivory House",
+        tag: "RESIDENTIAL",
+        category: "Family Home",
+        location: "Jaipur, India",
+        year: "2025",
+        area: "3,100 sq ft",
+        excerpt: "A timeless family home with natural light, understated luxury, and carefully curated details.",
+        heroImg: "assets/10.jpg",
+        gallery: ["assets/11.jpg", "assets/12.jpg", "assets/15.jpg", "assets/16.jpg"],
+        story: [
+          "Rooted in Jaipur's vernacular craft, The Ivory House blends handcrafted terrazzo and limestone floors with delicate linen drapery.",
+          "Centralized light shafts bathe the open courtyards with sun, creating calm shade transitions throughout the afternoon."
+        ],
+        nextId: 4,
+        nextTitle: "Walnut Studio Suite"
+      },
+      4: {
+        title: "Walnut Studio Suite",
+        tag: "RESIDENTIAL",
+        category: "Penthouse",
+        location: "Noida, India",
+        year: "2025",
+        area: "1,450 sq ft",
+        excerpt: "Minimalist layout enriched with bespoke walnut paneling, brass accents, and moody ambient lighting.",
+        heroImg: "assets/11.jpg",
+        gallery: ["assets/12.jpg", "assets/13.jpg", "assets/17.jpg", "assets/18.jpg"],
+        story: [
+          "Designed for a creative director, Walnut Studio Suite balances deep, rich tones with subtle illumination.",
+          "Every detail — from recessed ceiling tracks to tailored book shelving — was calibrated to offer quiet focus without clutter."
+        ],
+        nextId: 5,
+        nextTitle: "Atelier Workspace"
+      },
+      5: {
+        title: "Atelier Workspace",
+        tag: "COMMERCIAL",
+        category: "Creative Studio",
+        location: "Bengaluru, India",
+        year: "2024",
+        area: "4,200 sq ft",
+        excerpt: "An open-plan collaborative workplace balancing industrial concrete with handcrafted oak workstations.",
+        heroImg: "assets/32.jpg",
+        gallery: ["assets/24.jpg", "assets/2.jpg", "assets/35.jpg", "assets/21.jpg"],
+        story: [
+          "Atelier Workspace rethinks commercial agility. Acoustically isolated meeting pods coexist with communal benching carved from solid Indian oak.",
+          "Lush interior plantings and warm diffuse lighting enhance wellness and sustained creative focus."
+        ],
+        nextId: 6,
+        nextTitle: "Terracotta Villa"
+      },
+      6: {
+        title: "Terracotta Villa",
+        tag: "RESIDENTIAL",
+        category: "Holiday Home",
+        location: "Goa, India",
+        year: "2025",
+        area: "4,600 sq ft",
+        excerpt: "A coastal retreat celebrating earthy terracotta tiles, lime-washed walls, and breezy indoor-outdoor living.",
+        heroImg: "assets/13.jpg",
+        gallery: ["assets/14.jpg", "assets/15.jpg", "assets/9.jpg", "assets/10.jpg"],
+        story: [
+          "Situated in tranquil Goa, Terracotta Villa is an ode to local clay craftsmanship and tropical airflow.",
+          "Deep overhangs and terracotta brick louvers shield the interior against harsh heat while celebrating natural shade patterns."
+        ],
+        nextId: 7,
+        nextTitle: "Marble & Oak Kitchen"
+      },
+      7: {
+        title: "Marble & Oak Kitchen",
+        tag: "MODULAR KITCHEN",
+        category: "Modern Kitchen",
+        location: "Mumbai, India",
+        year: "2024",
+        area: "380 sq ft",
+        excerpt: "Seamless waterfall island paired with fluted cabinetry and integrated smart culinary storage.",
+        heroImg: "assets/4.jpg",
+        gallery: ["assets/26.jpg", "assets/39.jpg", "assets/1.jpg", "assets/15.jpg"],
+        story: [
+          "The Marble & Oak Kitchen prioritizes ergonomic flow and visual purity. Honed Calacatta marble pairs with custom fluted timber drawer fronts.",
+          "Appliance garages and touch-to-open larders preserve monolithic lines when not in culinary use."
+        ],
+        nextId: 8,
+        nextTitle: "Japandi Garden Home"
+      },
+      8: {
+        title: "Japandi Garden Home",
+        tag: "RESIDENTIAL",
+        category: "Courtyard House",
+        location: "Chandigarh, India",
+        year: "2025",
+        area: "2,750 sq ft",
+        excerpt: "Harmonious design embracing organic linen textures, low-profile furniture, and interior garden views.",
+        heroImg: "assets/15.jpg",
+        gallery: ["assets/16.jpg", "assets/17.jpg", "assets/13.jpg", "assets/14.jpg"],
+        story: [
+          "Low-profile timber furniture, woven tatami textures, and floor-to-ceiling garden apertures define this serene residence.",
+          "The home acts as a tranquil buffer against urban bustle, prioritizing natural materials that patina with age."
+        ],
+        nextId: 9,
+        nextTitle: "Botanica Coffee House"
+      },
+      9: {
+        title: "Botanica Coffee House",
+        tag: "HOSPITALITY",
+        category: "Boutique Cafe",
+        location: "Pune, India",
+        year: "2024",
+        area: "1,650 sq ft",
+        excerpt: "Warm timber counters, indoor ficus trees, and custom cane seating creating a grounded social atmosphere.",
+        heroImg: "assets/16.jpg",
+        gallery: ["assets/17.jpg", "assets/18.jpg", "assets/15.jpg", "assets/8.jpg"],
+        story: [
+          "Botanica Coffee House invites visitors to pause and savor. Soft terracotta wall arches frame lush indoor ficus trees.",
+          "The central barista bar is wrapped in artisanal glazed ceramic tiles, creating an active social hearth."
+        ],
+        nextId: 10,
+        nextTitle: "The Linear Loft"
+      },
+      10: {
+        title: "The Linear Loft",
+        tag: "RESIDENTIAL",
+        category: "Urban Loft",
+        location: "Gurugram, India",
+        year: "2025",
+        area: "2,100 sq ft",
+        excerpt: "Double-height volume with custom black metal stairs, floating shelves, and warm timber flooring.",
+        heroImg: "assets/17.jpg",
+        gallery: ["assets/18.jpg", "assets/19.jpg", "assets/9.jpg", "assets/10.jpg"],
+        story: [
+          "Taking inspiration from warehouse conversions, The Linear Loft unites raw architectural steel with warm residential craftsmanship.",
+          "A floating cantilevered timber staircase connects the living realm to the mezzanine private study above."
+        ],
+        nextId: 11,
+        nextTitle: "Clay & Stone Villa"
+      },
+      11: {
+        title: "Clay & Stone Villa",
+        tag: "RESIDENTIAL",
+        category: "Hillside Residence",
+        location: "Dehradun, India",
+        year: "2026",
+        area: "3,800 sq ft",
+        excerpt: "Rustic dry-stacked stone walls paired with warm cedar ceilings and expansive valley-facing windows.",
+        heroImg: "assets/34.jpg",
+        gallery: ["assets/31.jpg", "assets/22.jpg", "assets/11.jpg", "assets/27.jpg"],
+        story: [
+          "Perched on an eastern ridge, Clay & Stone Villa merges into its Himalayan foothill landscape.",
+          "Locally harvested dry stone and clay plaster regulate interior climate while providing an unyielding sense of grounded warmth."
+        ],
+        nextId: 12,
+        nextTitle: "Fluted Gallery Suite"
+      },
+      12: {
+        title: "Fluted Gallery Suite",
+        tag: "COMMERCIAL",
+        category: "Art Gallery",
+        location: "New Delhi, India",
+        year: "2024",
+        area: "3,400 sq ft",
+        excerpt: "Minimalist exhibition setting featuring concealed lighting tracks and sculptural limestone pedestals.",
+        heroImg: "assets/36.jpg",
+        gallery: ["assets/33.jpg", "assets/37.jpg", "assets/23.jpg", "assets/25.jpg"],
+        story: [
+          "Designed as a versatile backdrop for contemporary Indian art, the gallery features floor-level shadow gaps and seamless micro-concrete floors.",
+          "Custom acoustic fluting along primary boundary walls controls echoes without interrupting artistic sightlines."
+        ],
+        nextId: 1,
+        nextTitle: "The Serene Residence"
+      }
+    };
+
+    function loadProjectDetails() {
+      const urlParams = new URLSearchParams(window.location.search);
+      let projectId = parseInt(urlParams.get('id'), 10);
+
+      if (!projectId || !projectsData[projectId]) {
+        projectId = 1;
+      }
+
+      const project = projectsData[projectId];
+
+      // Titles & Excerpts
+      document.getElementById('page-title').textContent = `${project.title} — Oak & Earth`;
+      document.getElementById('detail-tag').textContent = project.tag;
+      document.getElementById('detail-title').textContent = project.title;
+      document.getElementById('detail-excerpt').textContent = project.excerpt;
+
+      // Hero Image
+      const heroImg = document.getElementById('detail-hero-img');
+      heroImg.src = project.heroImg;
+      heroImg.alt = project.title;
+
+      // 4 Gallery Images
+      const gallery = document.getElementById('detail-gallery');
+      gallery.innerHTML = '';
+      project.gallery.forEach((src, idx) => {
+        const item = document.createElement('div');
+        item.className = 'gallery-item';
+        item.innerHTML = `<img src="${src}" alt="Detail ${idx + 1}" class="gallery-img">`;
+        gallery.appendChild(item);
+      });
+
+      // Specifications Table
+      document.getElementById('spec-location').textContent = project.location;
+      document.getElementById('spec-year').textContent = project.year;
+      document.getElementById('spec-area').textContent = project.area;
+      document.getElementById('spec-category').textContent = project.category;
+
+      // The Story Paragraphs
+      const storyDiv = document.getElementById('detail-story');
+      storyDiv.innerHTML = '';
+      project.story.forEach(text => {
+        const p = document.createElement('p');
+        p.textContent = text;
+        storyDiv.appendChild(p);
+      });
+
+      // Next Project Bar
+      document.getElementById('next-project-title').textContent = project.nextTitle;
+      document.getElementById('next-project-btn').href = `project-detail.html?id=${project.nextId}`;
+    }
+
+    // Run directly on page load
+    window.addEventListener('DOMContentLoaded', loadProjectDetails);
+    loadProjectDetails();
+  </script>
+
+</body>
+</html>
